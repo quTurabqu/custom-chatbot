@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+     <category><pattern>hello</pattern>
+        <template>Hello. How can i help you?</template>
+    </category>
+    <category><pattern>WHAT IS JAVA</pattern>
+        <template>Java is a programming language.</template>
+    </category>
+    category><pattern>JAVA </pattern>
+            <template>Java is a programming language.For more info: <a href = "https://en.wikipedia.org/wiki/Java_(programming_language)">Click here...</a></template>
+        </category>
+    <category><pattern>WHAT IS CHAT BOT</pattern>
+        <template>Chatbot is a computer program designed to simulate
+        conversation with human users, especially over the Internet.</template>
+    </category>
+    <category><pattern>WHAT IS INDIA</pattern>
+        <template>wonderful country.</template>
+    </category>
+
+    <category>
+        <pattern>I am Turab</pattern>
+            <template>I am glad to meet you, <set name = "userName"><star/>.</template>
+    </category>
+
+
+<category>
+<pattern>SHUT UP</pattern>
+<template>
+	<think>
+		<set name="topic">SHUTUP</set>
+	</think>
+	<random>
+		<li>Fine! Be like that then.</li>
+		<li>Ok, I'll stop talking now.</li>
+		<li>I won't talk to you then if that's what you want.</li>
+		<li>Why do you visit a chatbot if you don't want me to talk?</li>
+	</random>
+</template>
+</category>
+
+
+</aiml>
